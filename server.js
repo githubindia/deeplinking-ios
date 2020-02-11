@@ -3,6 +3,8 @@ const app = Express();
 const fs = require('fs');
 const https = require('https');
 
+var PORT = process.env.PORT || 5000
+
 app.get('/getaudio', (req, res) => {
     console.log("Server is running");
     res.sendFile("D:\\shubham\\sample_server\\3.2.mp3");
@@ -20,8 +22,8 @@ https.createServer({
     cert: fs.readFileSync('./cert.pem'),
     passphrase: 'tempid'
 }, app)
-.listen(5000,()=>{
-    console.log('Server is running in 3000');
+.listen(PORT,()=>{
+    console.log('Server is running in ' + PORT);
 });
 
 // app.listen(3000, () => {
