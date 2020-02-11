@@ -10,7 +10,7 @@ app.get('/getaudio', (req, res) => {
     res.sendFile("D:\\shubham\\sample_server\\3.2.mp3");
 })
 
-var aasa = fs.readFileSync(__dirname + '\\apple-app-site-association');
+var aasa = fs.readFileSync('./apple-app-site-association');
 app.get('/apple-app-site-association', function(req, res, next) {
      res.set('Content-Type', 'application/json');
      res.status(200).send(aasa);
