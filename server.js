@@ -17,17 +17,17 @@ app.get('/apple-app-site-association', function(req, res, next) {
 });
 
 
-https.createServer({
-    key: fs.readFileSync('./key.pem'),
-    cert: fs.readFileSync('./cert.pem'),
-    passphrase: 'tempid'
-}, app)
-.listen(PORT,()=>{
-    console.log('Server is running in ' + PORT);
-});
-
-// app.listen(3000, () => {
-//     console.log("server is running at 3000");
+// https.createServer({
+//     key: fs.readFileSync('./key.pem'),
+//     cert: fs.readFileSync('./cert.pem'),
+//     passphrase: 'tempid'
+// }, app)
+// .listen(PORT,()=>{
+//     console.log('Server is running in ' + PORT);
 // });
+
+app.listen(5000, () => {
+    console.log("server is running at 3000");
+});
 
 
