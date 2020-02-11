@@ -26,7 +26,7 @@ app.get('/apple-app-site-association', function(req, res, next) {
 //     console.log('Server is running in ' + PORT);
 // });
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     console.log("server is running at 3000");
 });
 
