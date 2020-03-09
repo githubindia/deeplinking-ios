@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "TX9BNXVNUL.hex.lab.deeplinking",
+        "appID": "com.hexaware.mystyle",
         "paths": [
           "*"
         ]
